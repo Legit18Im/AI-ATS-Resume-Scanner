@@ -1,0 +1,4 @@
+Name: Gordon Ramsay
+Email: chef@kitchen.com
+Skills: Cooking, Knife Skills, Food Safety, Menu Planning, Baking.
+Experience: Head Chef at Hell's Kitchen.
