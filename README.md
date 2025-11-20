@@ -14,12 +14,12 @@ A full-stack **Applicant Tracking System (ATS)** that uses **Deep Learning (SBER
 
 | **Modern Dashboard** | **Detailed Analysis** |
 |:---:|:---:|
-| ![Home Page](D:\Team_Project\ATS Scanner\ats_web\screenshots\home.png) | ![Results Page](D:\Team_Project\ATS Scanner\ats_web\screenshots\detailed_analysis.png) |
+| ![Home Page](screenshots\home.png) | ![Results Page](screenshots\detailed_analysis.png) |
 | *Secure User Dashboard* | *Semantic Scoring & Gaps* |
 
 | **Scan History** | **PDF Reporting** |
 |:---:|:---:|
-| ![History Page](D:\Team_Project\ATS Scanner\ats_web\screenshots\history.png) | ![PDF Report](D:\Team_Project\ATS Scanner\ats_web\screenshots\pdf_downloader.png) |
+| ![History Page](screenshots\history.png) | ![PDF Report](screenshots\pdf_downloader.png) |
 | *Database Persistence* | *Downloadable Reports* |
 
 ---
