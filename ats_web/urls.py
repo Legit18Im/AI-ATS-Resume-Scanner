@@ -21,4 +21,15 @@ from scanner import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
+    
+    # Auth URLs
+    path('signup/', views.signup_view, name='signup'),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+
+    # App URLs
+    path('history/', views.history, name='history'),
+    path('history/<int:pk>/', views.view_scan, name='view_scan'),
+    path('history/<int:pk>/download/', views.download_report, name='download_report'),
+    path('about/', views.about, name='about'),
 ]
