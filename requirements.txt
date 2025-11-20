@@ -1,11 +1,11 @@
-Django==5.0
+Django
 gunicorn
 whitenoise
-spacy==3.6.1
+spacy
 sentence-transformers
 scikit-learn
 pdfplumber
 python-docx
 xhtml2pdf
-huggingface-hub==0.24.6
+huggingface-hub
 numpy
