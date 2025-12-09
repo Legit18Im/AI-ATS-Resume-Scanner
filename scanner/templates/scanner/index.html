@@ -42,6 +42,8 @@
     <div class="container">
         <a class="navbar-brand" href="/"><i class="fas fa-robot me-2"></i>AI ATS Scanner</a>
         <a href="/about" class="nav-link text-white ms-3 me-auto opacity-75 hover-opacity-100">About Project</a>
+        <a href="/templates" class="nav-link text-white ms-3">Templates</a>
+        <a href="/resume-builder" class="nav-link text-white ms-3">Resume Builder</a>
         
         <div class="d-flex align-items-center">
             {% if user.is_authenticated %}
@@ -129,7 +131,27 @@
                         </div>
                     </div>
                 </div>
-
+<div class="mt-5">
+                    <h5 class="fw-bold text-dark"><i class="fas fa-ruler-combined me-2"></i>Formatting & Layout Check</h5>
+                    <div class="card border-0 bg-light p-3">
+                        <ul class="list-unstyled mb-0">
+                            {% for tip in layout_tips %}
+                                <li class="mb-2">
+                                    {% if "✅" in tip %}
+                                        <span class="text-success">{{ tip|safe }}</span>
+                                    {% elif "❌" in tip %}
+                                        <span class="text-danger fw-bold">{{ tip|safe }}</span>
+                                    {% else %}
+                                        <span class="text-dark">{{ tip|safe }}</span>
+                                    {% endif %}
+                                </li>
+                            {% empty %}
+                                <li class="text-muted">No layout issues detected.</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                
                 {% if tips %}
                 <div class="mt-5">
                     <h5 class="fw-bold text-warning text-dark"><i class="fas fa-lightbulb me-2"></i>AI Recommendations</h5>

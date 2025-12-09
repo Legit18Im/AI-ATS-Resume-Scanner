@@ -32,4 +32,8 @@ urlpatterns = [
     path('history/<int:pk>/', views.view_scan, name='view_scan'),
     path('history/<int:pk>/download/', views.download_report, name='download_report'),
     path('about/', views.about, name='about'),
+    path('templates/', views.templates_list, name='templates_list'),
+    # Resume Builder
+    path('resume-builder/', views.resume_builder, name='resume_builder'),
+    path('resume-builder/download/<int:pk>/', views.download_resume_pdf, name='download_resume_pdf'),   
 ]
